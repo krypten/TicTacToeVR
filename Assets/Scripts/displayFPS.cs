@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +18,5 @@ public class displayFPS : MonoBehaviour {
 		text.text = fps.ToString ();
 
 		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
-		
 	}
 }

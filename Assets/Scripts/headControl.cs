@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,13 +7,12 @@ public class headControl : MonoBehaviour {
     public GameObject Player;
 
     private float speed = 5.0f;
+
 	// Use this for initialization
 	void Start () {
-		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	void FixedUpdate () {
         if(GameLogic.GetComponent<GameLogic>().playerTurn == true) {
             if (GameLogic.GetComponent<holdPiece>().holdingPiece == true) {
                 Vector3 dir = GameLogic.GetComponent<holdPiece>().pieceBeingHeld.transform.position - transform.position;
